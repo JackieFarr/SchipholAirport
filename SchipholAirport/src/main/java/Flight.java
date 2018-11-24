@@ -10,6 +10,11 @@ public class Flight {
         this.destination = destination;
     }
 
+    public Flight getFlight(Plane plane, int flightNum, String destination){
+        Flight flight = new Flight(plane, flightNum, destination);
+        return flight;
+    }
+
 
     public Plane getPlane() {
         return this.plane;

@@ -5,8 +5,8 @@ import java.util.BitSet;
 
 public class Airport {
 
-    private ArrayList<Plane> hangar;
     private String airportCode;
+    private ArrayList<Plane> hangar;
     private ArrayList<Flight> departures;
 
     public Airport(String airportCode){
@@ -37,4 +37,8 @@ public class Airport {
     }
 
 
+    public void addPlaneToFlight(Plane plane, int flightNum, String destination, String departures){
+        Flight flight = new Flight(plane, flightNum, destination);
+        this.departures.add(flight);
+    }
 }
