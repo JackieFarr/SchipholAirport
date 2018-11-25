@@ -16,6 +16,9 @@ public class Plane {
         return this.plane;
     }
 
+    public ArrayList<Passenger>getPassengers(){
+        return this.passenger;
+    }
 
     public int getPlaneCapacity() {
         return this.plane.getCapacity();
